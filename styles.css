@@ -1,0 +1,222 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(HankenGrotesk-VariableFont_wght.ttf);
+}
+
+
+
+
+
+html, body, .container {
+    height: 100%;
+    font-family:myFirstFont;
+}
+
+
+
+body
+{
+    background-color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+}
+
+.result, .summary {
+    flex: 1;
+    height:350px;
+}
+
+
+.result
+{
+    text-align:center;
+    flex: 1;
+    background: rgb(73,54,242);
+background: linear-gradient(90deg, rgba(73,54,242,1) 49%, rgba(85,119,182,1) 91%);
+border-radius:15px;
+    
+
+   
+}
+
+
+.your
+{
+    padding:10px;
+    color:#C6BBFF
+}
+
+.note 
+{
+    color:#C6BBFF;
+    max-width:auto;
+    margin:auto;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.percentage
+{
+    height:130px;
+    width:130px;
+    border-radius:50%;
+    margin:auto;
+    margin-bottom:20px;
+    display:flex;
+    flex-direction:column;
+    background-color:#442DE0;
+    
+}
+
+h1
+{
+    font-size:50px;
+    color:white;
+}
+h4
+{
+    margin-top:-30px;
+    color:white;
+}
+
+
+.word {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color:#1C1F31;
+}
+
+
+button
+{
+   
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+  
+}
+
+
+.summary
+{
+    display:flex;
+    flex-direction: column;
+justify-content: space-around;
+
+}
+
+.char {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    
+}
+
+.char img {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+#hun {
+    margin-left: auto;
+}
+
+
+button
+{
+    width:200px;
+    padding:10px;
+    border-radius:20px;
+    border:none;
+    background-color:#303B59;
+    color:white;
+}
+
+button:hover
+{
+    background-color:#4936F2;
+    cursor: pointer;
+}
+
+#reaction
+{
+    color:#CA7875;
+    font-weight:bold;
+}
+
+
+#memory
+{
+    color:#ECB94D;
+    font-weight:bold;
+
+}
+
+#verbal
+{
+    color:#53B199;
+    font-weight:bold;
+
+}
+
+
+#visual
+{
+    color:#768AD5;
+    font-weight:bold;
+
+}
+
+#mark
+{
+    font-size:25px;
+    color:white;
+}
+
+.hundred
+{
+    color:#A09DA5;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+        margin: auto;
+        flex-direction:column;
+    }
+
+
+    .note 
+{
+    word-wrap: anywhere;
+  width: 200px;
+}
+
+
+.result, .summary {
+    flex: 0;
+    height:350px;
+    width:300px;
+}
+
+
+button 
+{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+
+}
